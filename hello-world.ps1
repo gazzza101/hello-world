@@ -33,7 +33,7 @@ $elapsed_time = 0
 
 Clear-Host
 
-Write-Host "I am awake!"
+#Write-Host "I am awake!"
 
 $count = 0
 
