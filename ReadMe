@@ -1,10 +1,31 @@
 ##This is the read me file
 This is my first github repo and so far its working out
 
-Later I hope to do good things with this
+git status 
+This command displays the current status of your repository, saying which files have been modified, which files have been added or committed.
 
-This is the 3rd line 
+git branch 
+Returns the branches of our repository, highlighting the one we are currently working on
 
-This is the 4th line from home
+git add hello-world.ps1 
+Tells git that you want to include the changes made in hello-world.ps1 in the next commit
 
-This is number 5
+git commit -m "message" 
+The commit command basically records the changes you have made and added (using the previous command) to your local repository
+
+git push 
+This command sends the changes you have made in your local repo (via commits) to the remote repository you have configured
+
+git pull 
+Pull is the brother command of push. It downloads a remote repository to your local machine
+
+git checkout branchName 
+Is how we switch from the branch that we are on to another one. The branch is this command is the branch that we want to switch to. 
+The checkout command can also be used to create new branches. 
+Using the command git checkout -b newly_created_branch we create a new branch and switch to it
+
+git merge branchToMergeFrom 
+The actual word for joining two branches is merge. This means moving the changes you have made in one branch to the branch that you are on. 
+imagine we want to marge our changes from develop to master. First, we must checkout to master, if we are in develop, 
+and then git merge develop to pass the changes made in our develop branch to our master branch. 
+
