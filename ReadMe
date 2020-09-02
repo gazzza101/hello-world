@@ -7,8 +7,11 @@ This command displays the current status of your repository, saying which files 
 git branch 
 Returns the branches of our repository, highlighting the one we are currently working on
 
+git branch -d branchName
+After merging it is safe to delete  the branch
+
 git add hello-world.ps1 
-Tells git that you want to include the changes made in hello-world.ps1 in the next commit
+Tells git that you want to (stage) include the changes made in hello-world.ps1 in the next commit
 
 git commit -m "message" 
 The commit command basically records the changes you have made and added (using the previous command) to your local repository
@@ -28,4 +31,3 @@ git merge branchToMergeFrom
 The actual word for joining two branches is merge. This means moving the changes you have made in one branch to the branch that you are on. 
 imagine we want to marge our changes from develop to master. First, we must checkout to master, if we are in develop, 
 and then git merge develop to pass the changes made in our develop branch to our master branch. 
-
