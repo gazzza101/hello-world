@@ -10,6 +10,9 @@ Returns the branches of our repository, highlighting the one we are currently wo
 git branch -d branchName
 After merging it is safe to delete  the branch
 
+git switch branchName
+Move to a different branch
+
 git add hello-world.ps1 
 Tells git that you want to (stage) include the changes made in hello-world.ps1 in the next commit
 
